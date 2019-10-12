@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace LinkedList
+namespace Structures
 {
-    class DoubleLinkedList<T> : IEnumerable<T>
+    class LinkedListDouble<T> : IEnumerable<T>
     {
         public int Count { get; private set; }
         public NodeDouble<T> Head { get; private set; }

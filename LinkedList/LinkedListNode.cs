@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace LinkedList
+namespace Structures
 {
     class LinkedListNode<T> : IEnumerable<T>
     {
