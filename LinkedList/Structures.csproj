@@ -51,6 +51,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueueNode.cs" />
+    <Compile Include="ArraySorted.cs" />
+    <Compile Include="QuickSort.cs" />
     <Compile Include="StackArray.cs" />
     <Compile Include="StackNode.cs" />
   </ItemGroup>

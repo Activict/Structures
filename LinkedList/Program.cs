@@ -10,6 +10,9 @@ namespace Structures
     {
         static void Main(string[] args)
         {
+
+            //ArraySorted sort = new ArraySorted(new int[] { 5, 7, 10, 4, 8, 4, 6, 2 });
+
             LinkedListNode<int> linkedList = new LinkedListNode<int>();
             //linkedList.Head = new Node<int>(5);
 
