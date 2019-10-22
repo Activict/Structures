@@ -49,14 +49,14 @@ namespace Structures
                 {
                     if (array[indexSorted] < array[indexSorted-1])
                     {
-                        int indexInsert = SearchIndexInsert(indexSorted);
-                        InsertIndex(indexInsert, indexSorted);
+                        int indexInsert = searchIndexInsert(indexSorted);
+                        insertIndex(indexInsert, indexSorted);
                     }
                     indexSorted++;
                 }
             }
         }
-        private int SearchIndexInsert(int indexSorted)
+        private int searchIndexInsert(int indexSorted)
         {
             for (int i = 0; i < indexSorted; i++)
             {
@@ -65,7 +65,7 @@ namespace Structures
             }
             throw new IndexOutOfRangeException();          
         }
-        private void InsertIndex(int indexInsert, int indexSorted)
+        private void insertIndex(int indexInsert, int indexSorted)
         {
             int temp = array[indexSorted];
             for (; indexInsert < indexSorted; indexSorted--)
@@ -104,12 +104,12 @@ namespace Structures
             Array.Copy(array, 0, left, 0, halfLength);
             Array.Copy(array, halfLength, right, 0, halfLength);
 
-            MergeSort(left);
-            MergeSort(right);
+            mergeSort(left);
+            mergeSort(right);
 
-            Merge(array, left, right);
+            merge(array, left, right);
         }
-        private void MergeSort(int[] arr)
+        private void mergeSort(int[] arr)
         {
             if (arr.Length <= 1)
                 return;
@@ -122,12 +122,12 @@ namespace Structures
             Array.Copy(arr, 0, left, 0, halfLength);
             Array.Copy(arr, halfLength, right, 0, halfLength);
 
-            MergeSort(left);
-            MergeSort(right);
+            mergeSort(left);
+            mergeSort(right);
 
-            Merge(arr, left, right);
+            merge(arr, left, right);
         }
-        private void Merge(int[] arr, int[] left, int[] right)
+        private void merge(int[] arr, int[] left, int[] right)
         {
             int l = 0;
             int r = 0;
